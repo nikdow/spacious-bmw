@@ -1,0 +1,201 @@
+/*
+ Theme Name:   Spacious Child
+ Theme URI:    http://bmwskiclub.asn.au
+ Description:  Spacious Child
+ Author:       CBDWeb
+ Author URI:   http://www.cbdweb.net
+ Template:     spacious
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  spacious-child
+*/
+
+/* CSS for creating the style of the four big icons in the middle of the home page. Basically four column table without using a table - SB */
+.header {
+	width: 74%;
+	left: 13%;
+}
+
+.colmask {
+	width: 95%;
+	left: 0;
+}
+
+.colmid {
+	right: 25%;
+}
+
+.colin {
+	right: 25%;
+}
+
+.colleft {
+	right: 25%;
+}
+
+.col1 {
+	width: 23%;
+	left: 101%;
+}
+
+.col2 {
+	width: 23%;
+	left: 53%;
+}
+
+.col3 {
+	width: 23%;
+	left: 80%;
+}
+
+.col4 {
+	width: 23%;
+	left: 82%;
+}
+
+.footer {
+	width: 100%;
+	left: 10%;
+}
+
+.header {
+	clear: both;
+	float: left;
+	position: relative;
+	border-bottom: #000 1px solid;
+	background-color: white;
+}
+
+.colmask {
+	clear: both;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	background-color: white;
+}
+
+.colmid {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: white;
+}
+
+.colin {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: white;
+}
+
+.colleft {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: white;
+}
+
+.col1 {
+	padding: 0 0 1em;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	background-color: white;
+	text-align: center;
+}
+
+.col2 {
+	padding: 0 0 1em;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	background-color: white;
+	text-align: center;
+}
+
+.col3 {
+	padding: 0 0 1em;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	background-color: white;
+	text-align: center;
+}
+
+.col4 {
+	padding: 0 0 1em;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	background-color: white;
+	text-align: center;
+}
+
+.footer {
+	clear: both;
+	float: left;
+	position: left;
+	border-bottom: #000 1px solid;
+	background-color: white;
+	padding: 20px;
+}
+
+.bottom {
+	clear: both;
+	width: 90%;
+	float: left;
+	position: relative;
+	background-color: #cdeb8b;
+}
+
+/*Some overides for colours in the Spacious template etc. - SB*/
+body {
+	border-width: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 90%;
+	width: 100%;
+	min-width: 800px;
+}
+
+a {
+	color: #3DABDE;
+}
+
+.header-post-title-class {
+	font-size: 22px;
+	padding-bottom: 0;
+	line-height: 36px;
+	color: white;
+}
+
+.custom-background {
+	background-size: cover;
+}
+
+#header-logo-image img {
+	max-width: 400px;
+}
+#header-text-nav-container {
+	background-color: white;
+}
+
+#page {
+	background-color: transparent;
+}
+
+#featured-slider {
+	background-color: white;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 20px;
+	border-bottom-color: transparent;
+	border-top-width: 20px;
+	border-top-color: transparent;
+}
+
+#main {
+	background-color: white;
+}
