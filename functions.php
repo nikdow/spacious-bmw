@@ -4,6 +4,9 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
 }
+/*
+ * show private posts in widget list of archives
+ */
 function customarchives_where( $x ) {
 	return $x . " OR (post_type = 'post' AND post_status = 'private')";
 }
@@ -13,7 +16,8 @@ if ( is_user_logged_in() ) {
 }
 
 /**
- * Shows meta information of post.
+ * Shows meta information of post.  Removed author and edit links
+ * Overrides theme function of same name (props to theme authors for checking)
  */
 function spacious_entry_meta() {
    if ( 'post' == get_post_type() ) :
@@ -53,3 +57,16 @@ function spacious_entry_meta() {
       echo '</footer>';
    endif;
 }
+/*
+ * remove Private from post titles (including in archives)
+ */
+function the_title_trim($title)
+{
+  $pattern[0] = '/Protected:/';
+  $pattern[1] = '/Private:/';
+  $replacement[0] = ''; // Enter some text to put in place of Protected:
+  $replacement[1] = ''; // Enter some text to put in place of Private:
+
+  return preg_replace($pattern, $replacement, $title);
+}
+add_filter('the_title', 'the_title_trim');
