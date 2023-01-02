@@ -27,8 +27,7 @@
                                 <header class="page-header">
                                     <h2 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'spacious' ); ?></h2>
                                 </header>
-                                <p><?php _e( 'It looks like nothing was found at this location. Try the search below, or <br/>
-                                <b>login below to view member pages</b>.', 'spacious' ); ?></p>
+                                <p><?php _e( 'It looks like nothing was found at this location. Try the search below.', 'spacious' ); ?></p>
                                 <?php get_search_form(); ?>
                             <?php endif; ?>
 
